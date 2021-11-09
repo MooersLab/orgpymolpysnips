@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print the atom names as tuples and coordinates of the atoms in a residue as a list.
+# group: Programming
+# key: printNamesCoordinates
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.do("stored.coords = []; iterate_state 1, (resi ${1:101}), stored.coords.append([x,y,z]); ")
+cmd.do("stored.names = [];  iterate_state 1, (resi ${1:101}), stored.names.append([name]);")
+cmd.do("stored.names3 = [tuple(i) for i in stored.names];")
+cmd.do("[print(i,j) for i,j in(zip(stored.names3, stored.coords)];")
+#+END_SRC
+$0

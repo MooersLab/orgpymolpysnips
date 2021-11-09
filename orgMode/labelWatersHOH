@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Label waters with HOH and their residue number.
+# group: Labels
+# key: labelWatersHOH
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.do("label resn HOH ,\"%s%s\" % (resn,resi);")
+#+END_SRC
+$0

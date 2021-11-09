@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Filled rings in nucleic acids.
+# group: MolecularRepresentation
+# key: filledRing
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.do("show sticks;set cartoon_ring_mode, 3;")
+cmd.do("set cartoon_ring_finder, 1;")
+cmd.do("set cartoon_ladder_mode, 1;")
+cmd.do("set cartoon_nucleic_acid_mode, 4;")
+cmd.do("set cartoon_ring_transparency, 0.5;")
+cmd.do("as cartoon;")
+#+END_SRC
+$0

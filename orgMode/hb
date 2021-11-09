@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Creates an object of all H-bonds found by PyMOL.
+# group: Jupyter
+# key: hb
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.distance("hbonds", "all", "all", "3.2", mode="2")
+cmd.set("dash_gap","0.4")
+cmd.set("dash_color","grey30")
+cmd.set("dash_width","1.5")
+cmd.set("dash_length",".25")
+print("Enter rmhb to remove the hbonds.")
+#+END_SRC
+$0

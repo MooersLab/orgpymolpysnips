@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Display three electron density maps as isosurfaces.
+# group: ElectronDensity
+# key: threeMapsIsosurface
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.do("load ${1:4dgr}.pdb;")
+cmd.do("# Make sure to rename map file so that ;")
+cmd.do("# the root filename differs from pdb root filename;")
+cmd.do("load ${1:4dgr}_2fofc.ccp4, 2fofc;")
+cmd.do("load ${1:4dgr}_fofc.ccp4, fofc;")
+cmd.do("select  ${2:glycan}, ${3:resid 200 or (resid 469:477)};")
+cmd.do("isosurface ${4:mesh1}, 2fofc, 1.0, ${2:glycan};")
+cmd.do("color density, ${4:mesh1};")
+cmd.do("isosurface  ${5:mesh2}, fofc, 3.0, ${2:glycan};")
+cmd.do("color green, ${5:mesh2};")
+cmd.do("isosurface  ${6:mesh3}, fofc, -3.0, ${2:glycan};")
+cmd.do("color red, ${6:mesh3};")
+#+END_SRC
+$0

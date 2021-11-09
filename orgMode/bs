@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Ball and stick representation.
+# group: MolecularRepresentation
+# key: bs
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.do("show sticks;")
+cmd.do("set stick_radius, 0.12;")
+cmd.do("set stick_ball, on;")
+cmd.do("set stick_ball_ratio, 1.9;")
+cmd.do("show nb_spheres;")
+cmd.do("set nb_spheres_size=0.33;")
+#+END_SRC
+$0

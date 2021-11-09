@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: The pearl effect is made with two spheres with the outer sphere being transparent.
+# group: MolecularRepresentation
+# key: pearl
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.do("create ${1:sodium2}, ${2:sodium1};")
+cmd.do("set sphere_transparency, 0.4, ${1:sodium2};")
+cmd.do("set sphere_scale, 1.05, ${1:sodium2};")
+cmd.do("ray;")
+#+END_SRC
+$0

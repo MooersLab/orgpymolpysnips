@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: This code shows the cartoon backbone tube as 65% transparent. It hides the rungs of the cartoon. It shows all of the non-H atoms are sticks. The motivation is to have the cartoon highlight the backbone without dominanting the scene.
+# group: NucleicAcids
+# key: nucleicAcidBackboneTubesSticks
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.do("set bg_rgb, white;")
+cmd.do("hide everything, all;")
+cmd.do("# Change to the name of your molecular object.;")
+cmd.do("show cartoon, ${1:3nd3};")
+cmd.do("set cartoon_sampling,1;")
+cmd.do("set cartoon_tube_radius, 0.5;")
+cmd.do("set cartoon_ladder_mode, 0;")
+cmd.do("# Set to 0.0 to turn off transparency;")
+cmd.do("set cartoon_transparency, ${2:0.65};")
+cmd.do("# The default strick radisu is 0.25. I think it is too thick.;")
+cmd.do("set stick_radius ${3:0.12};")
+cmd.do("show sticks;")
+cmd.do("hide sticks, element H;")
+#+END_SRC
+$0

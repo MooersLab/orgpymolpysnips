@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: DSSR block representation with custom coloring after loading the dssr_block.py script by Thomas Holder. The x3dna-dssr executable needs to be in the PATH.
+# group: NucleicAcids
+# key: dssrBlock4
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.do("reinitialize;")
+cmd.do("${1:run /Users/blaine/.pymol/startup/dssr_block.py};")
+cmd.do("fetch ${2:1msy}, async=0;")
+cmd.do("set cartoon_nucleic_acid_color, ${3:orange};")
+cmd.do("dssr_block block_color=N red | minor 0.9 | major yellow;")
+#+END_SRC
+$0

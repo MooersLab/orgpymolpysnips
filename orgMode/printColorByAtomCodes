@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print the codes for color-by-atom (util.cba*) alternates.
+# group: ColorScheme
+# key: printColorByAtomCodes
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+print("util.cbag, green carbons atoms" + "\n" + "util.cbac, cyan carbon atoms" + "\n" + "util.cbam, magenta carbon atoms" + "\n" + "util.cbay, yellow carbons atoms" + "\n"+ "util.cbas, salmon carbons atoms" + "\n" + "util.cbaw, white carbons atoms" + "\n" + "util.cbab, slate carbons atoms" + "\n" + "util.cbao, bright orange carbons atoms" + "\n" + "util.cbap, purple carbons atoms" + "\n" +"util.cbak, pink carbons atoms")
+#+END_SRC
+$0

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Imports needed for most uses of pymol in Jupyter. Combination of importPyMOL and importPythonDisplay.
+# group: Jupyter
+# key: imports4PyMOLjupyter
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+from pymol import cmd
+from IPython.display import Image
+from IPython.core.display import HTML
+#+END_SRC
+$0

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: AveBResiX, prints the residue number and the average bfactor. Uses reduce and lambda, builtin Python functional porgramming functions. Note that you need to convert the length of the list of Bfactors from an integer.
+# group: Print
+# key: aveB4resiXpy
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+for i in range(1,21):
+     name = "label%d" % i;
+     cmd.pseudoatom(name, label="label font id %d" % i, pos=(0,0,0));
+     cmd.set("label_font_id", i, name);
+cmd.set("label_size", 50);
+cmd.set("grid_mode");
+#+END_SRC
+$0

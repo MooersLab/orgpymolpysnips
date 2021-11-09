@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Three electron density as volumes. Make sure to rename map file so that the root filename differs from pdb root filename.
+# group: ElectronDensity
+# key: threeMapsVolume
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.do("load ${1:4dgr}.pdb;")
+cmd.do("load ${1:4dgr}_2fofc.ccp4, 2fofc;")
+cmd.do("load ${1:4dgr}_fofc.ccp4, fofc;")
+cmd.do("select  ${2:glycan}, ${3:resid 200 or (resid 469:477)};")
+cmd.do("volume ${4:mesh1}, 2fofc, 1.0, ${2:glycan};")
+cmd.do("color density, ${4:mesh1};")
+cmd.do("volume ${5:mesh2}, fofc, 3.0, ${2:glycan};")
+cmd.do("color green, ${5:mesh2};")
+cmd.do("volume ${6:mesh3}, fofc, -3.0, ${2:glycan};")
+cmd.do("color red, ${6:mesh3};")
+#+END_SRC
+$0

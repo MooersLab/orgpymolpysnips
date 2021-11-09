@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Display H-bonds as dashes colored black.
+# group: H-bonds
+# key: drawHbonds
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.do("hide everything, hydrogens;")
+cmd.do("hide labels;")
+cmd.do("# set the color of the dashed lines representing the H-bond.;")
+cmd.do("set dash_color, ${1:black};")
+cmd.do("set dash_gap, 0.4;")
+cmd.do("set dash_radius, 0.08;")
+#+END_SRC
+$0

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Wait until all current commands have been executed. A timeout ensures that that command ecentually returns.
+# group: Programming
+# key: synch
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.sync(timeout=${1:1.0},poll=${2:0.05});
+#+END_SRC
+$0

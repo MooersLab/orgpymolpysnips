@@ -1,0 +1,41 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: These are the instructions for loading and aligning multiple files.
+# group: Objects
+# key: loadAndAlignManyFiles3
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+from pymol import cmd
+import glob
+import re
+
+
+def saveSep(prefix=""):
+    """
+    Saves multiple objects into multiple files using an optional prefix name.
+    This function is can save time.
+
+    Usage in PyMOL:
+
+    saveSep <prefix>
+    
+    Usage in pymol"s Python API:
+
+    cmd.do("saveSep <prefix>")
+ 
+    e.g. saveSep prefix
+    """
+    obj_list = cmd.get_names("all")
+
+    if obj_list:
+        for i in range(len(obj_list)):
+            obj_name = "%s%s.pdb" % (prefix, obj_list[i])
+            cmd.save(obj_name, obj_list[i])
+            print("Saving %s" % obj_name)
+    else:
+        print("No objects found")
+
+
+cmd.extend("saveSep", saveSep)
+#+END_SRC
+$0

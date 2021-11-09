@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print B factors of part B of a residue.
+# group: Print
+# key: printBspartB
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+cmd.do("iterate resi ${1:38} and altloc ${2:B}, print resi, name, alt, b;")
+#+END_SRC
+$0

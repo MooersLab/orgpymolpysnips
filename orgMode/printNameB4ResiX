@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print name and b-factor for a residue.
+# group: Print
+# key: printNameB4ResiX
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+Bfac_dict = { "Bfactors3" : [] };
+cmd.iterate("(${1:resi 133})","Bfactors3.append((name, b))", space=Bfac_dict); 
+[print("%s %.2f" % (i,j)) for i,j in Bfac_dict["Bfactors3"];
+#+END_SRC
+$0

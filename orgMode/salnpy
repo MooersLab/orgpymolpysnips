@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Save an aln flle with a timestamp. Python version.
+# group: FileIO
+# key: salnpy
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+import datetime;
+from pymol import cmd;
+DT =datetime.datetime.now().strftime("yr%Ymo%mday%dhr%Hmin%M");
+s = str(DT);
+cmd.save(stemName+s+".aln");
+#+END_SRC
+$0

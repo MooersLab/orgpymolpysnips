@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Scale the radius and color of atoms as spheres by property in the B-value column.
+# group: MolecularRepresentation
+# key: scaleRadiusColor
+# --
+#+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
+#+END_SRC
+$0
