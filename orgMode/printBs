@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
 # name: Print the B-factors of a residue.
-# group: Print
+# group: pymolpy-Print
 # key: printBs
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer

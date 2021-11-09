@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
 # name: Reset hash_max from 100 to 2000 to enable the saving of 28 inches by 28 inches.
-# group: FileIO
+# group: pymolpy-FileIO
 # key: wallartpy
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer

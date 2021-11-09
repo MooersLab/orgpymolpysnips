@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
 # name: Return the docstring for the preset submodule. The command help preset fails to return anything. The command help(pymol.preset) has the same effect as help(preset).
-# group: Help
+# group: pymolpy-Help
 # key: presetDocs
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer

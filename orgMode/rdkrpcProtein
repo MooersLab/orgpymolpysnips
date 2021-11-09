@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
 # name: Demo of the use of the RPC server with a protein via rdkit.
-# group: Jupyter
+# group: pymolpy-Jupyter
 # key: rdkrpcProtein
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer

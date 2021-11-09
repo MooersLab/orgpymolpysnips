@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
 # name: Remove all measurement objects in the interal GUI.
-# group: Jupyter
+# group: pymolpy-Jupyter
 # key: rmd
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer

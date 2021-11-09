@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
 # name: Demo of the use of the RPC server with a protein via ipymol. Create a kernel for python interpreter from PyMOL inside Jupyter. See the kernel snippet for an example. See the README.md file on pymolsnips GItHub website or more details https://github.com/MooersLab/pymilsnips. Start pymol in terminal with pymol -R. Select pymol.python as kernel in Juptyer. The double parentheses are required when set_view is run this way.;
-# group: Jupyter
+# group: pymolpy-Jupyter
 # key: ipymolProtein
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer

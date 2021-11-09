@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
 # name: Set radius of ball used to make solvent accessible surface.
-# group: MolecularRepresentation
+# group: pymolpy-MolecularRepresentation
 # key: solventRadius
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer

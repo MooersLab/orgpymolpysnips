@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
 # name: To align all of the loaded RNA structures in all possible combinations by their C1' carbon atoms. Yes, this construct is a list comprehension inside a list comprehension!
-# group: Objects
+# group: pymolpy-Objects
 # key: loadAndAlignManyFiles2
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer

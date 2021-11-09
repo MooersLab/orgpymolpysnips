@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
 # name: Print the codes for color-by-atom (util.cba*) alternates.
-# group: ColorScheme
+# group: pymolpy-ColorScheme
 # key: printColorByAtomCodes
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
