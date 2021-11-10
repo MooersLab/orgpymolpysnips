@@ -43,14 +43,17 @@ This capability supports the practice of the FAIR principles and the practice of
 - PyMOL
 - a jupyter kernel mapped to the Python interpreter of PyMOL.
 
+## Installation of the snippet library
 
-
-## Installation
-
- 
 - Create the directory `~/.emacs.d/snippets/org-mode` for your personal snippets if this directory does not exist yet.
 - Download this repo.
 - Move the contents of `orgMode` to  `~/.emacs.d/snippets/org-mode`.
+
+## Configuration of the Emacs intitialization file ( e.g., .emacs.el, .emacs, or ./emacs.d/init.el)
+
+
+
+
 
 ## Operation
 
