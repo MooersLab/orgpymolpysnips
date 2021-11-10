@@ -34,7 +34,8 @@ This capability supports the practice of the FAIR principles and the practice of
 
 
 ## Comparison with using Jupyter
-<center>
+<div align="center">
+
 
 | Features          | Org Mode | Jupyter  |
 |:-------------------|:----------:|:----------:|
@@ -47,8 +48,8 @@ This capability supports the practice of the FAIR principles and the practice of
 | Rendering speed   | -        | +        |
 | Scrolling speed   | -        | +        |
 
-* Depends on the Jupyter snippet extension being used.
-</center>
+     *Depends on the Jupyter snippet extension being used.
+</div>
 
 
 ## Requirements
