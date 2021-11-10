@@ -34,7 +34,21 @@ This capability supports the practice of the FAIR principles and the practice of
 
 
 ## Comparison with using Jupyter
+<center>
 
+| Features          | Org Mode | Jupyter  |
+|:-------------------|:----------:|:----------:|
+| Tab triggers      | +        | -        |
+| Tab stops         | +        | -        |
+| Snippet groups*   | +        | +/-      |
+| Parallel sessions | +        | -        |
+| Support for editing prose | +++ | + |  
+| Pass output data  | +        | -        |
+| Rendering speed   | -        | +        |
+| Scrolling speed   | -        | +        |
+
+* Depends on the Jupyter snippet extension being used.
+</center>
 
 
 ## Requirements
