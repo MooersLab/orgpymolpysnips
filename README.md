@@ -33,6 +33,10 @@ This capability supports the practice of the FAIR principles and the practice of
 - The snippets are have tabtriggers
 
 
+## Comparison with using Jupyter
+
+
+
 ## Requirements
 
 - Emacs
@@ -51,11 +55,12 @@ This capability supports the practice of the FAIR principles and the practice of
 
 ## Configuration of the Emacs intitialization file ( e.g., .emacs.el, .emacs, or ./emacs.d/init.el)
 
-
-
+<p align="center"><img src="images/config.png"></p>
 
 
 ## Operation
+
+<p align="center"><img src="images/org-yas.png"></p>
 
 - Open a org document in Emacs.
 - Select under the `YASnippet` pulldown `Reload everything` to load the snippets in an old session of PyMOL.
@@ -64,3 +69,21 @@ This capability supports the practice of the FAIR principles and the practice of
 - Place the cursor inside the code block or on the first line of the source block and enter `C-c C-c` to execute the code. The output will appear below.
 - You may have to merge code blocks from multiple snippets for complex analyses. The merger has to be done by manual copy and paste.
 - You can also access the pymolshortcuts. The file containing the shortcuts can be loaded by running the command `cmd.do("run /Users/blaine/Scripts/PyMOLScripts/pymolshortcuts.py")`. For example, the ambient occlussion shortcut is applied by entering `cmd.do(AO)`.
+
+## Example input source block  
+  
+Change the kernel name to that for a Python interpreter that has access to the PyMOL API.
+The session name is arbitary. 
+Each session is independent.
+
+The height and width in the argument for Image() must be given but do not have to be the actual pixel values. 
+PyMOL only outputs PNG image files.  
+  
+<p align="center"><img src="images/combined1.png"></p>
+  
+  
+## Example result block  
+Fold as many of the code and result blocks to reduce the lag in scrolling the org document in Emacs.
+  
+<p align="center"><img src="images/pymol1out.png"></p>
+  
