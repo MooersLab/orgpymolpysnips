@@ -47,6 +47,7 @@ This capability supports the practice of the FAIR principles and the practice of
 | Pass output data  | +        | -        |
 | Rendering speed   | -        | +        |
 | Scrolling speed   | -        | +        |
+| Support for export to PDF | +++++ | + |    
 
      *Depends on the Jupyter snippet extension being used.
 </div>
@@ -70,7 +71,51 @@ This capability supports the practice of the FAIR principles and the practice of
 
 ## Configuration of the Emacs intitialization file ( e.g., .emacs.el, .emacs, or ./emacs.d/init.el)
 
-<p align="center"><img src="images/config.png"></p>
+My full configuration file can be found [](here).
+
+Org-mode and org-babel are required.
+Org babel requires a list of languages.
+Jupyter has to be the last language in this list.
+
+```elisp
+;; List jupyter last.
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((emacs-lisp . nil)
+   (C . t)
+   (js . t)
+   (ditaa . t)
+   (ipython . t)
+   (python . t)
+   (gnuplot . t)
+   (R . t)
+   (latex . t)
+   (plantuml . t)
+   (shell . t)
+   (jupyter . t) ) )
+```
+
+The python-mode folder above contains snippets that can be added inside org-mode source blocks.
+The following code enables Emacs to recognize that the interior of a org source block has
+a python scope. 
+The python-mode submenum should appear in the yasnippets pull-down menu.
+
+```elisp
+;; enable use of python instead of python-juptyer
+(org-babel-jupyter-override-src-block "python")
+```
+
+A security question appears when you evaluate a souce block.
+This can be annoying when developing code.
+The following code turns off this security question for the listed languages.
+
+```elisp
+;; Turn off security confirmation for langs in list.
+;; source: https://emacs.stackexchange.com/questions/21124/execute-org-mode-source-blocks-without-security-confirmation
+(defun my-org-confirm-babel-evaluate (lang body)
+  (not (member lang '("C" "clojure" "sh" "jupyter-python" "jupyter-julia"))))
+(setq org-confirm-babel-evaluate 'my-org-confirm-babel-evaluate)
+```
 
 
 ## Operation
