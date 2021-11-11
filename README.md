@@ -44,7 +44,7 @@ This capability supports the practice of the FAIR principles and the practice of
 | Tab triggers      | +        | -        |
 | Tab stops         | +        | -        |
 | Snippet groups*   | +        | +/-      |
-| Parallel sessions | +        | -        |
+| Parallel sessions in the same documents | +        | -        |
 | Support for editing prose | +++ | + |  
 | Pass output data  | +        | -        |
 | Rendering speed   | -        | +        |
