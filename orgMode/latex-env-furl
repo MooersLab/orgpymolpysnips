@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Latex for url in footnote.
+# group: latex-envs
+# key: furl
+# --
+\footnote{\url{${1:http}}}. $0
