@@ -72,6 +72,8 @@ This capability supports the practice of the FAIR principles and the practice of
 - Download this repo.
 - Move the contents of `orgMode` to  `~/.emacs.d/snippets/org-mode`.
 - Move the contents of `pythonMode` to  `~/.emacs.d/snippets/python-mode`.
+- If you start a new Emacs session, you should see submenus starting with `pymolpy-` under python-mode and org-mode in the `YASnippet` pulldown menu. 
+- If you have a running Emacs session, select `Reload everything` under the `YASnippet` pulldown menu. You often have to repeat two or three times before seeing the new submenus.
 
 ## Configuration of the Emacs intitialization file ( e.g., .emacs.el, .emacs, or ./emacs.d/init.el)
 
