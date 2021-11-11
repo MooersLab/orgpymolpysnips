@@ -94,5 +94,4 @@ def rvj(StoredView=0, decimal_places=2, outname="roundedview.txt"):
     myFile.write(x.format(*myRoundedList) + "")
     myFile.close()
     return myRoundedList
-#+END_SRC
 $0

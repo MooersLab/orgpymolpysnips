@@ -12,5 +12,4 @@ cmd.do("hide (name H*);")
 cmd.do("set nb_sphere_size, ${3:0.35};")
 cmd.do("set nb_spheres_quality, ${4:1};")
 cmd.do("show nb_spheres;")
-#+END_SRC
 $0

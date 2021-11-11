@@ -6,5 +6,4 @@
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
 cmd.set_key("F1",lambda:cmd.stereo({"on":0,"off":1}[cmd.get("stereo")]));
-#+END_SRC
 $0

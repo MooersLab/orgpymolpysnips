@@ -12,5 +12,4 @@ color black, ${1:1lw9};
 util.${2:cbag};
 set cgo_line_width, 2.5;
 png  ${3:testCell3}.png, ${4:1600},${5:1600};${6:600};${7:0}
-#+END_SRC
 $0

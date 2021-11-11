@@ -16,5 +16,4 @@ cmd.do("set cartoon_nucleic_acid_color, orange;")
 cmd.do("orient;turn z,30; translate [0,5,0]")
 cmd.do("dssr_block;")
 cmd.do("png ~/dssrBlock1.png 1600,1600")
-#+END_SRC
 $0

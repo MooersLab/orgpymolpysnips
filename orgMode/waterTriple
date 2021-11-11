@@ -8,5 +8,4 @@
 cmd.do("fetch ${1:lw9}, async=0; ")
 cmd.do("zoom resi ${2:313}; ")
 cmd.do("preset.technical(selection=\"all\", mode=1);")
-#+END_SRC
 $0

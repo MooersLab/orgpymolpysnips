@@ -9,5 +9,4 @@ from pymol import cmd
 from IPython.display import Image
 PATH = "${1:/Users/blaine/}"
 cmd.do("run ${2:/Users/blaine/Scripts/PyMOLScripts/pymolshortcuts.py")
-#+END_SRC
 $0

@@ -9,5 +9,4 @@ cmd.do("create ${1:sodium2}, ${2:sodium1};")
 cmd.do("set sphere_transparency, 0.4, ${1:sodium2};")
 cmd.do("set sphere_scale, 1.05, ${1:sodium2};")
 cmd.do("ray;")
-#+END_SRC
 $0

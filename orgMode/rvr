@@ -38,5 +38,4 @@ def rvr(StoredView=0, decimal_places=2, outname="roundedview.txt"):
     #Write to a text file.
     myFile = open("roundedview.txt", "a") myFile.write(x.format(*myRoundedList) + "") myFile.close()
     return myRoundedList
-#+END_SRC
 $0

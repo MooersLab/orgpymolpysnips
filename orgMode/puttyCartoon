@@ -11,5 +11,4 @@ cmd.do("set cartoon_smooth_loops, 0;")
 cmd.do("set cartoon_flat_sheets, 0;")
 cmd.do("set cartoon_smooth_loops,0;")
 cmd.do("## unset cartoon_smooth_loops;")
-#+END_SRC
 $0

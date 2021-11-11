@@ -6,5 +6,4 @@
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
 sel = "polymer.protein"; print(len(set([(i.chain, i.resi, i.resn) for i in cmd.get_model(sel).atom])));
-#+END_SRC
 $0

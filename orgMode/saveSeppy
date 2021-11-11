@@ -26,5 +26,4 @@ def saveSep(prefix=""):
       print("Saving %s" %  obj_name)
   else:
     print("No objects found")
-#+END_SRC
 $0

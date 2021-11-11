@@ -25,5 +25,4 @@ Image(filename = PATH + "D614Gipython3.png", width=600, unconfined=True)
 #+END_SRC
 
 #+RESULTS:
-#+END_SRC
 $0

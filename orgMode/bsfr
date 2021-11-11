@@ -24,5 +24,4 @@ cmd.do("set cartoon_ring_mode, 3, ligand;")
 cmd.do("set cartoon_ring_width, 0.12, ligand;")
 cmd.do("set cartoon_ring_transparency, .0, ligand;")
 cmd.do("show cartoon, ligand;")
-#+END_SRC
 $0

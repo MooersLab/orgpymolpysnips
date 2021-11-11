@@ -15,5 +15,4 @@ cmd.do("set cartoon_nucleic_acid_color, ${5:orange}, chB;")
 cmd.do("# color the bases;")
 cmd.do("set cartoon_ladder_color,  ${6:density}, chA;")
 cmd.do("set cartoon_ladder_color,  ${7:yellow}, chB;")
-#+END_SRC
 $0

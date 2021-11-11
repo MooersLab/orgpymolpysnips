@@ -28,5 +28,4 @@ for x in scaledBB:
 cmd.do("spectrum b, selection=4gdx;")
 cmd.do("space cmyk;")
 cmd.do("set specular_intensity , 0.25;")
-#+END_SRC
 $0

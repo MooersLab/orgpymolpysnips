@@ -10,5 +10,4 @@ print("Usage: cntpses");
 myPath = os.getcwd();
 pseCounter = len(glob.glob1(myPath,"*.pse"));
 print("Number of *.pse (session) files in the current directory: ", pseCounter);
-#+END_SRC
 $0

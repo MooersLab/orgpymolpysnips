@@ -54,5 +54,4 @@ print("List of all pairwise ligand--protein atom-atom distances:")
 
 # More compact print statement. Need an f-string format statement.
 [print( d + " " + str(dist_list[d])) for d in dist_list.keys()]
-#+END_SRC
 $0

@@ -7,5 +7,4 @@
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
 cmd.do("# Edit the name for the ditance, the selection criteria for atom 1, and the selection criteria for atom 2.;")
 cmd.do("distance ${1:dist3}, ${2:/rcsb074137//B/IOD`605/I`B}, ${3:/rcsb074137//B/IOD`605/I`A};")
-#+END_SRC
 $0

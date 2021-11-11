@@ -18,5 +18,4 @@ cmd.do("set ray_trace_mode, 3;")
 cmd.do("bg_color white;")
 cmd.do("set ray_trace_color, black;")
 cmd.do("set depth_cue,0;")
-#+END_SRC
 $0
