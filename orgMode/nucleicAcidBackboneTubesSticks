@@ -18,4 +18,5 @@ cmd.do("# The default strick radisu is 0.25. I think it is too thick.;")
 cmd.do("set stick_radius ${3:0.12};")
 cmd.do("show sticks;")
 cmd.do("hide sticks, element H;")
+#+END_SRC
 $0

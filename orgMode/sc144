@@ -7,4 +7,5 @@
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
 cmd.do("run $HOME/${1:Scripts/PyMOLscripts/}supercell.py;")
 cmd.do("supercell 1, 4, 4, ,  ${2:orange},  ${3:supercell1}, 1;")
+#+END_SRC
 $0

@@ -6,4 +6,5 @@
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
 cmd.do("set internal_gui_width=${1:0};")
+#+END_SRC
 $0

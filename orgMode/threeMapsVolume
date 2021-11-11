@@ -15,4 +15,5 @@ cmd.do("volume ${5:mesh2}, fofc, 3.0, ${2:glycan};")
 cmd.do("color green, ${5:mesh2};")
 cmd.do("volume ${6:mesh3}, fofc, -3.0, ${2:glycan};")
 cmd.do("color red, ${6:mesh3};")
+#+END_SRC
 $0

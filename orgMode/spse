@@ -12,4 +12,5 @@ cmd.do("DT =datetime.datetime.now().strftime(\"yr%Ymo%mday%dhr%Hmin%M\");")
 cmd.do("s = str(DT); ")
 cmd.do("cmd.save(stemName+s+\".pse\"); ")
 cmd.do("python end;")
+#+END_SRC
 $0

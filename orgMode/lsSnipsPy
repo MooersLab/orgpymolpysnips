@@ -270,4 +270,5 @@ print("waterTriple                               Examples of a triple water pent
 print("writeCommandReference2HTML                Write the command reference to html file in the present working directory. "),
 print("yrb                                       Run the yrb function from the pymolshortcuts.py file. "),
 print("------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+#+END_SRC
 $0

@@ -12,4 +12,5 @@ cmd.do("show sticks;")
 cmd.do("set stick_radius, ${2:1.2};")
 cmd.do("set nb_sphere_radius, ${3:0.35};")
 cmd.do("orient;")
+#+END_SRC
 $0

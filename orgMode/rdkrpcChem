@@ -20,4 +20,5 @@ s.ShowMol(mol, name = "${2:bilastine}", showOnly = False);
 s.Zoom("${2:bilastine}");
 s.SetDisplayStyle("${2:bilastine}", "sticks");
 s.GetPNG(preDelay=5);
+#+END_SRC
 $0

@@ -9,4 +9,5 @@ cmd.do("stereo; ")
 cmd.do("set ray_shadow, off;")
 cmd.do("ray ${1:2400,1200};")
 cmd.do("png ${2:aaa}.png;")
+#+END_SRC
 $0

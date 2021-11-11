@@ -69,4 +69,5 @@ def draw_axis(x=None, y=None, z=None, i=None, j=None, k=None, length=20.0, r=1.0
        cmd.load_cgo(obj,"axis"+str(counter.state))
        counter.state += 1
 python end
+#+END_SRC
 $0

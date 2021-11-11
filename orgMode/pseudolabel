@@ -8,4 +8,5 @@
 cmd.do("pseudoatom ${1:forLabel};")
 cmd.do("label ${1:forLabel}, \"%0\";")
 cmd.do("set label_color, ${2:red};")
+#+END_SRC
 $0

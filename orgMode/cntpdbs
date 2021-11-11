@@ -10,4 +10,5 @@ print("Usage: cntpdb")
 myPath = os.getcwd()
 pdbCounter = len(glob.glob1(myPath,"*.pdb"))
 print("Number of pdb files in the current directory: ", pdbCounter)
+#+END_SRC
 $0

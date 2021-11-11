@@ -10,4 +10,5 @@ cmd.do("set ray_shadow, off; ")
 cmd.do("#draw 3200,2000;")
 cmd.do("draw ${1:1600,1000}; ")
 cmd.do("png ${2:aaa}.png;")
+#+END_SRC
 $0

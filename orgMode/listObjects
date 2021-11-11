@@ -6,4 +6,5 @@
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
 cmd.do("objList = cmd.get_names(\"objects\");print(objList);")
+#+END_SRC
 $0

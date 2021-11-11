@@ -34,4 +34,5 @@ def loadFiles(files):
   else:
     print("No files found for pattern %s" % files)
 
+#+END_SRC
 $0

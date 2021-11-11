@@ -10,4 +10,5 @@ print("Usage: cntpmls");
 myPath = os.getcwd();
 pmlCounter = len(glob.glob1(myPath,"*.pml"));
 print("Number of pml files in the current directory: ", pmlCounter);
+#+END_SRC
 $0

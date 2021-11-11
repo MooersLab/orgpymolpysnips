@@ -17,4 +17,5 @@ cmd.do("isomesh ${4:mesh2}, fofc, 3.0, ${2:glycan};")
 cmd.do("color green, ${4:mesh2};")
 cmd.do("isomesh ${5:mesh3}, fofc, -3.0, ${2:glycan};")
 cmd.do("color red, ${5:mesh3};")
+#+END_SRC
 $0

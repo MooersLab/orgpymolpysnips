@@ -6,4 +6,5 @@
 # --
 #+BEGIN_SRC jupyter-python :session pymol :kernel ${1:cp38} :exports both :results raw drawer
 Image(filename = PATH +"${1:5da6orient}.png", width=${2:600}, height=${3:1000}, unconfined=True);
+#+END_SRC
 $0

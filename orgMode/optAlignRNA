@@ -164,4 +164,5 @@ def optAlignRNA( sel1, sel2 ):
     cmd.center("visible")
     cmd.orient()
     cmd.zoom("visible")
+#+END_SRC
 $0

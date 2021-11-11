@@ -12,4 +12,5 @@ Bfactors = [];
 # edit the selection below, which is a range of residue numbers here.;
 iterate (resi ${1:133}), Bfactors.append(b);
 print( "Average B-factor of residue ", %{1:133} , "   = ", "%.2f" %(reduce(lambda x, y: x + y, Bfactors) / float(len(Bfactors))) );
+#+END_SRC
 $0

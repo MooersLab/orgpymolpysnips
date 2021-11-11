@@ -117,4 +117,5 @@ def grayscale(selection="all"):
     cmd.color("grey91", "elem Y")
     cmd.color("grey51", "elem Zn")
     cmd.color("grey81", "elem Zr")
+#+END_SRC
 $0
