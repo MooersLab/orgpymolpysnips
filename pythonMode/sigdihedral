@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Set dihedral labels to display 2 decimals places to the right of the decimal point.
+# group: pymolpy-Labels
+# key: sigdihedral
+# --
+cmd.do("set label_dihedral_digits, ${1:2};")
+$0

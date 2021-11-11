@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Run the yrb function from the pymolshortcuts.py file. 
+# group: pymolpy-Jupyter
+# key: yrb
+# --
+cmd.do("yrb")
+$0

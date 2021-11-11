@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Import for loading the functions in the pymolshortcuts.py file. These functions can be run inside cmd.do() without the trailing (). For example, cmd.do('rv').
+# group: pymolpy-Jupyter
+# key: importShortcuts
+# --
+cmd.do("run /Users/blaine/Scripts/PyMOLScripts/pymolshortcuts.py")
+$0

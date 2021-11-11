@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Save an aln flle with a timestamp. Python version.
+# group: pymolpy-FileIO
+# key: salnpy
+# --
+import datetime;
+from pymol import cmd;
+DT =datetime.datetime.now().strftime("yr%Ymo%mday%dhr%Hmin%M");
+s = str(DT);
+cmd.save(stemName+s+".aln");
+$0

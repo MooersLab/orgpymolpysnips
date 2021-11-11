@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print in the command history window the docstrings of all of the functions in the cmd module.
+# group: pymolpy-Help
+# key: cmddocs
+# --
+[help(i) for i in dir(cmd)];
+$0

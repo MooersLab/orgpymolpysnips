@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Load PDB nb spheres.
+# group: pymolpy-MolecularRepresentation
+# key: loadPDBnb
+# --
+cmd.do("fetch ${1:3nd3}, name=${1:3nd3}, type=pdb, async=0;")
+cmd.do("orient;")
+cmd.do("set stick_radius, ${2:1.2};")
+cmd.do("hide (name H*);")
+cmd.do("set nb_sphere_size, ${3:0.35};")
+cmd.do("set nb_spheres_quality, ${4:1};")
+cmd.do("show nb_spheres;")
+$0

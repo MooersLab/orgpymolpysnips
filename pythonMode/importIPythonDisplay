@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Imports for using IPython to display images loaded from disk in notebook cells.
+# group: pymolpy-Jupyter
+# key: importIPythonDisplay
+# --
+from IPython.display import Image
+from IPython.core.display import HTML
+PATH = "/Users/blaine/"
+$0

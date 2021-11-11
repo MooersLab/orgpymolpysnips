@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Delete all H-bonds in the selection, which is all by default.
+# group: pymolpy-Jupyter
+# key: rmhb
+# --
+cmd.delete("hbonds")
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Write the command reference to html file in the present working directory. 
+# group: pymolpy-Help
+# key: writeCommandReference2HTML
+# --
+cmd.write_html_ref("pymol-command-ref.html");
+$0

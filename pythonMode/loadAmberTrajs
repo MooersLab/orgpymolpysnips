@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: The amber trajectories have to be loaded into the same object.
+# group: pymolpy-Trajectories
+# key: loadAmberTrajs
+# --
+cmd.do("load ${1:file}.top, ${2:protein};")
+cmd.do("load ${1:file}.rst, ${2:protein};")
+$0

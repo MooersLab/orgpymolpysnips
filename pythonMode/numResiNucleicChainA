@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print the number of residues in a nulceic acid chain.
+# group: pymolpy-Print
+# key: numResiNucleicChainA
+# --
+sel = "${1:chain A} and polymer.nucleic"; 
+[print(len(set([(i.resi, i.resn) for i in cmd.get_model(sel).atom])))];
+$0

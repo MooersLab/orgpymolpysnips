@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Wait until all current commands have been executed. A timeout ensures that that command ecentually returns.
+# group: pymolpy-Programming
+# key: synch
+# --
+cmd.sync(timeout=${1:1.0},poll=${2:0.05});
+$0

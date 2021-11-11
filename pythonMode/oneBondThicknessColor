@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: To change stick color and radius for the bond between atom 2 and 3, use the set_bond command.
+# group: pymolpy-MolecularRepresentation
+# key: oneBondThicknessColor
+# --
+cmd.do("set_bond stick_color, ${1:yellow}, index 2, index 3;")
+cmd.do("set_bond stick_radius, ${2:0.2}, index 2, index 3;")
+$0

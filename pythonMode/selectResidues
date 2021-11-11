@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Select residues by name.
+# group: pymolpy-Selection
+# key: selectResidues
+# --
+cmd.do("select aromatic, resn phe+tyr+trp;")
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Label the CA atoms with the Ala333 style format.
+# group: pymolpy-Labels
+# key: labelCAs
+# --
+cmd.do("label name CA,\"%s%s\" % (resn,resi);")
+$0

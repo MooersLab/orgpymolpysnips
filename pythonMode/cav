@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Run the cav function from the pymolshortcuts.py file to show buried cavities and pockets as molecular surfaces.
+# group: pymolpy-Jupyter
+# key: cav
+# --
+cmd.do("cav")
+$0

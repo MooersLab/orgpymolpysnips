@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Label waters with HOH and their residue number.
+# group: pymolpy-Labels
+# key: labelWatersHOH
+# --
+cmd.do("label resn HOH ,\"%s%s\" % (resn,resi);")
+$0

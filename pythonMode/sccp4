@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Save electron density map flle with timestamp.
+# group: pymolpy-FileIO
+# key: sccp4
+# --
+cmd.do("python;")
+cmd.do("import datetime;")
+cmd.do("from pymol import cmd; ")
+cmd.do("DT =datetime.datetime.now().strftime(\"yr%Ymo%mday%dhr%Hmin%M\");")
+cmd.do("s = str(DT); ")
+cmd.do("cmd.save(stemName+s+\".ccp4\"); ")
+cmd.do("python end;")
+$0

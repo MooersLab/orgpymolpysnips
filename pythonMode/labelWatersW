@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Label waters with W and their reisude number.
+# group: pymolpy-Labels
+# key: labelWatersW
+# --
+cmd.do("label resn HOH ,\"W%s\" % (resi);")
+$0

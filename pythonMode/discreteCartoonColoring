@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Turn on discrete colors between secondary structure elements.
+# group: pymolpy-MolecularRepresentation
+# key: discreteCartoonColoring
+# --
+cmd.do("set cartoon_discrete_colors, on;")
+$0

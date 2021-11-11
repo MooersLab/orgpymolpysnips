@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Label CA atom with single-letter residue name and residue number.
+# group: pymolpy-Labels
+# key: labelResnResi
+# --
+cmd.do("label name ca, \"%s%s\" %(one_letter[${1:resn}],${2:resi});")
+$0

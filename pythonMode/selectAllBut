@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Select all nitrogen atom in a selelction except from lysine.
+# group: pymolpy-Selection
+# key: selectAllBut
+# --
+cmd.do("select ${1:select1}, elem ${2:N} and chain ${3:A} and not resn ${4:LYS};")
+$0

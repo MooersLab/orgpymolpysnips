@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Undo a selection.
+# group: pymolpy-Selection
+# key: undoSelection
+# --
+cmd.do("disable ${1:sele}; ")
+$0

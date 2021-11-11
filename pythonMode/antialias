@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Set antialias to on to get smoother edges.
+# group: pymolpy-Pymolrc
+# key: antialias
+# --
+cmd.do("set antialias, 1;")
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print the path to the currently used PyMOL binary.
+# group: pymolpy-Print
+# key: printPathpy
+# --
+print(pymol.__path__)
+$0

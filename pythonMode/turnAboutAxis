@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Turn about axis.
+# group: pymolpy-ChangeOrientation
+# key: turnAboutAxis
+# --
+cmd.do("turn ${1:x},${2:90};")
+$0

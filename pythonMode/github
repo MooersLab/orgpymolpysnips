@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print url of README.md file of the pymolsnips repository.
+# group: pymolpy-Help
+# key: github
+# --
+cmd.do("https://github.com/MooersLab/pymolsnips/blob/master/README.md")
+$0

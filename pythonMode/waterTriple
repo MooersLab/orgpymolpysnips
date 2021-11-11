@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Examples of a triple water pentagon. Zoom in on the selection. Edit by changing the residue number.
+# group: pymolpy-MolecularRepresentation
+# key: waterTriple
+# --
+cmd.do("fetch ${1:lw9}, async=0; ")
+cmd.do("zoom resi ${2:313}; ")
+cmd.do("preset.technical(selection=\"all\", mode=1);")
+$0

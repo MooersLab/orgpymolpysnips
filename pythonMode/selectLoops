@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Select atoms by beta loops.
+# group: pymolpy-Selection
+# key: selectLoops
+# --
+cmd.do("select ${1:loops}, ss l;")
+$0

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Rename a chain. 
+# group: pymolpy-Programming
+# key: renameChain
+# --
+cmd.do("alter ${1:3fa0} and chain ${2:A}, chain=${3:\"C\"};")
+cmd.do("sort;")
+$0

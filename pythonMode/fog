@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Blur the background atoms.
+# group: pymolpy-MolecularRepresentation
+# key: fog
+# --
+cmd.do("set fog, 0;")
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Find H-bonds around a residue.
+# group: pymolpy-Print
+# key: findHbonds
+# --
+cmd.do("remove element h; distance hbonds, all, all, 3.2, mode=2;")
+$0

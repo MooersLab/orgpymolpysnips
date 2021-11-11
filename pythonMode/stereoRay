@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Stereo ray.
+# group: pymolpy-Stereo
+# key: stereoRay
+# --
+cmd.do("stereo; ")
+cmd.do("set ray_shadow, off;")
+cmd.do("ray ${1:2400,1200};")
+cmd.do("png ${2:aaa}.png;")
+$0

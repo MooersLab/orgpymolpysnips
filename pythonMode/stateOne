@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Select state 1 from a model with multiple states.
+# group: pymolpy-MolecularRepresentation
+# key: stateOne
+# --
+cmd.create("newobject", "oldobject", "1", "1");
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Set the width of the internal gui. Set to 0 to make the internal gui vanish.
+# group: pymolpy-Workshop
+# key: internalGUIwidth
+# --
+cmd.do("set internal_gui_width=${1:0};")
+$0

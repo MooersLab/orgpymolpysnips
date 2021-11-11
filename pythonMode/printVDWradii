@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print the van der Waals radii of the atoms in of a residue.
+# group: pymolpy-Programming
+# key: printVDWradii
+# --
+cmd.do("iterate (resi ${1:101}), print(name + \" %.2f\" % vdw);")
+$0

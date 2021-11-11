@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Set color of thernal ellipsoids. The PDB must have anisotopic temperature factors. See https://pymolwiki.org/index.php/Color_Values for the PyMOL colors.
+# group: pymolpy-MolecularRepresentation
+# key: ellipcol
+# --
+cmd.do("set ellipsoid_color, ${1:red};")
+$0

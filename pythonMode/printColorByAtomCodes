@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print the codes for color-by-atom (util.cba*) alternates.
+# group: pymolpy-ColorScheme
+# key: printColorByAtomCodes
+# --
+print("util.cbag, green carbons atoms" + "\n" + "util.cbac, cyan carbon atoms" + "\n" + "util.cbam, magenta carbon atoms" + "\n" + "util.cbay, yellow carbons atoms" + "\n"+ "util.cbas, salmon carbons atoms" + "\n" + "util.cbaw, white carbons atoms" + "\n" + "util.cbab, slate carbons atoms" + "\n" + "util.cbao, bright orange carbons atoms" + "\n" + "util.cbap, purple carbons atoms" + "\n" +"util.cbak, pink carbons atoms")
+$0

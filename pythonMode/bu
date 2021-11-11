@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Generate the biological unit using the quat.py script. Edit the path to the file quat.py. You may have to download it from the PyMOL Wiki page.
+# group: pymolpy-MolecularRepresentation
+# key: bu
+# --
+cmd.do("run ~/${1:Scripts/PyMOLScripts}/quat.py;")
+cmd.do("quat;")
+$0

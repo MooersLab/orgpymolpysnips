@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Valence bond.
+# group: pymolpy-MolecularRepresentation
+# key: doubleBond
+# --
+cmd.do("set valence, 1; ")
+cmd.do("set valence_mode, 1;")
+$0

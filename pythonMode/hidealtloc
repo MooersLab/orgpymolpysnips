@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Hide the partially occupied atoms with the part b alternate locator.
+# group: pymolpy-AlternateLocators
+# key: hidealtloc
+# --
+cmd.do("select altconf, alt ${1:b}  # select B alternative locators;")
+cmd.do("hide everything, altconf  # hide alt B locators;")
+$0

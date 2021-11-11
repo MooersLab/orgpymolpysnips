@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Rotate a selection about and axis by a given angle.
+# group: pymolpy-ChangeOrientation
+# key: rotate
+# --
+cmd.do("rotate ${1:x}, ${2:45}, ${3:pept};")
+$0

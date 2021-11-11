@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print the bfactors of a residue.
+# group: pymolpy-Programming
+# key: printBfactors
+# --
+cmd.do("iterate (resi ${1:101}), print(name + \" %.2f\" % b);")
+$0

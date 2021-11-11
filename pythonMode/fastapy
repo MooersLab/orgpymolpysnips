@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Python version of the command to print the sequence from a PDB file in the fasta format.
+# group: pymolpy-Print
+# key: fastapy
+# --
+# Get the sequences of all molecular objects.;
+print(cmd.get_fastastr("${1:all}"));
+$0

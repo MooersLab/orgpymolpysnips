@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Imports needed for most users of PyMOL in Jupyter. Combination of importPyMOL and importPythonDisplay.
+# group: pymolpy-Jupyter
+# key: importPyMOLandShortcuts
+# --
+from pymol import cmd
+from IPython.display import Image
+PATH = "${1:/Users/blaine/}"
+cmd.do("run ${2:/Users/blaine/Scripts/PyMOLScripts/pymolshortcuts.py")
+$0

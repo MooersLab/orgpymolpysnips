@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print the B-factors of a residue.
+# group: pymolpy-Print
+# key: printBs
+# --
+cmd.do("remove element h; iterate resi ${1: 1:13}, print(resi, name,b);")
+$0

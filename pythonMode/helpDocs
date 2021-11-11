@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Return the docstring for the help submodule. This command is more concise:  help help.
+# group: pymolpy-Help
+# key: helpDocs
+# --
+cmd.do("help(help)")
+$0

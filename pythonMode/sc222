@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Run supercell script to generate three cells in all directions. This script was written by Thomas Holder.
+# group: pymolpy-UnitCellDisplay
+# key: sc222
+# --
+cmd.do("run $HOME/${1:Scripts/PyMOLscripts/}supercell.py;")
+cmd.do("supercell 2, 2, 2, , ${2:orange},  ${3:supercell1}, 1;")
+$0

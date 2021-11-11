@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Select atoms by name.
+# group: pymolpy-Selection
+# key: selectName
+# --
+cmd.do("select ${1:oxygen2}, name ${2:O2};")
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Display the bond valence of ligands only.
+# group: pymolpy-MolecularRepresentation
+# key: setLigandValenceOn
+# --
+cmd.do("set valence, on, resn ${1:RZS}; set valence, off, not resn ${2:RZS};")
+$0

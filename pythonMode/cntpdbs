@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Count number of *.pdb files in current directory.
+# group: pymolpy-Jupyter
+# key: cntpdbs
+# --
+print("Count the number of pdb files in the current directory.")
+print("Usage: cntpdb")
+myPath = os.getcwd()
+pdbCounter = len(glob.glob1(myPath,"*.pdb"))
+print("Number of pdb files in the current directory: ", pdbCounter)
+$0

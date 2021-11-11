@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Show cartoon in the style of Molscript ribbons.
+# group: pymolpy-MolecularRepresentation
+# key: molscriptRibbon
+# --
+cmd.do("set cartoon_highlight_color, grey;")
+cmd.do("show cartoon;")
+cmd.do("set cartoon_flat_sheets, 0;")
+cmd.do("set cartoon_smooth_loops, 0;")
+cmd.do("set cartoon_fancy_helices, 1;")
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Label the main chain atoms with the following: resn,resi,atom name.
+# group: pymolpy-Labels
+# key: labelMainChain
+# --
+cmd.do("label name n+c+o+ca,\"%s%s%s\" % (resn,resi,name);")
+$0

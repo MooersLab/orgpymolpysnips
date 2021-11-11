@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Display all symmetry mates in four unit cells stacked long c-axis. Uses supercell.py in $HOME/Scripts/PyMOLscripts/.
+# group: pymolpy-UnitCellDisplay
+# key: sc114
+# --
+cmd.do("run $HOME/${1:Scripts/PyMOLscripts/}supercell.py;")
+cmd.do("supercell 1, 1, 4, ,  ${2:orange},  ${3:supercell1}, 1;")
+$0

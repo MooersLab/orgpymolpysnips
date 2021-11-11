@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Position label with pseudoatom.
+# group: pymolpy-Labels
+# key: pseudolabel
+# --
+cmd.do("pseudoatom ${1:forLabel};")
+cmd.do("label ${1:forLabel}, \"%0\";")
+cmd.do("set label_color, ${2:red};")
+$0

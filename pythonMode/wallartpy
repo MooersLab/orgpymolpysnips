@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Reset hash_max from 100 to 2000 to enable the saving of 28 inches by 28 inches.
+# group: pymolpy-FileIO
+# key: wallartpy
+# --
+# Reset hash_max from 100 to 2000 to enable the saving of images of large size for office wall hangings, eg. 30 x 30 inches.;
+cmd.do("hash_max=2000");
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Turn off magenta squares on current selection.
+# group: pymolpy-Selection
+# key: hideSelection
+# --
+cmd.do("indicate none")
+$0

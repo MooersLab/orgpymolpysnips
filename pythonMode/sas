@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Show the solvent excluded surface.
+# group: pymolpy-MolecularRepresentation
+# key: sas
+# --
+cmd.do("set surface_solvent, ${1:on}")
+$0

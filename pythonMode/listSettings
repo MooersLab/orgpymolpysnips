@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print to the screen the settings and their current parameter values. This is the more compact version.
+# group: pymolpy-Settings
+# key: listSettings
+# --
+[print("%s => %s" % (name, setting.get_setting_text(name))) for name in setting.get_name_list()];
+$0

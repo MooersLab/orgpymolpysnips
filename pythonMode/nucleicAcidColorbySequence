@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: This code colors the nucleotides by base seqence. It can be applied to any nucleic acid.
+# group: pymolpy-NucleicAcids
+# key: nucleicAcidColorbySequence
+# --
+cmd.do("select rna_A, resn A;")
+cmd.do("select rna_C, resn C;")
+cmd.do("select rna_G, resn G;")
+cmd.do("select rna_U, resn U;")
+cmd.do("select dna_T, resn T;")
+cmd.do("color ${1:yellow}, rna_A;")
+cmd.do("color ${2:red}, rna_C; ")
+cmd.do("color ${3:gray40}, rna_G;")
+cmd.do("color ${4:palecyan}, rna_U;")
+cmd.do("color ${5:brown}, dna_T;")
+$0

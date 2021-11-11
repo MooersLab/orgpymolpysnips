@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print the number of residues in chain A of a protein.
+# group: pymolpy-Print
+# key: numResiProteinChainA
+# --
+sel = "${1:chain A} and polymer.protein"; print(len(set([(i.chain, i.resi, i.resn) for i in cmd.get_model(sel).atom])));
+$0

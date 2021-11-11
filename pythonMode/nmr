@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Show all models in a nmr structure.
+# group: pymolpy-Jupyter
+# key: nmr
+# --
+cmd.do("set all_states, on")
+$0

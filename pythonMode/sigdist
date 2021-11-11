@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Set distance labels to display 2 decimals.
+# group: pymolpy-Labels
+# key: sigdist
+# --
+cmd.do("set label_distance_digits, ${1:2};")
+$0

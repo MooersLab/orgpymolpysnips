@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Set color name to a RGB code.
+# group: pymolpy-MolecularRepresentation
+# key: setcolor
+# --
+cmd.do("set_color ${1:bark}, [${2:0.1, ${3:0.1}, ${4:0.1}];")
+cmd.do("color ${1:bark}, ${5:protein};")
+$0

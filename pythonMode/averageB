@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Average the B-factors by using a regular list as opposed to a stored list in PyMOL. Edit the selection as needed. 
+# group: pymolpy-Print
+# key: averageB
+# --
+cmd.do("Bfactors = []; ")
+cmd.do("#  >>> edit the selection below, which is a range of residue numbers here.;")
+cmd.do("iterate (resi ${1:133}), Bfactors.append(b);")
+cmd.do("print(\"Sum = \", \"%.2f\" % (sum(Bfactors)));")
+cmd.do("print(\"Number of atoms = \", len(Bfactors));")
+cmd.do("print( \"Average B =\" , \"%.2f\" % ( sum(Bfactors)/float(len(Bfactors))));")
+$0

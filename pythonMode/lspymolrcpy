@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print list of active pymolrc files.
+# group: pymolpy-Pymolrc
+# key: lspymolrcpy
+# --
+print(invocation.options.deferred);
+$0

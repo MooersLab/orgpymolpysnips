@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Count number of *.ccp4 (electron density map) files in current directory.
+# group: pymolpy-Jupyter
+# key: cntccp4emaps
+# --
+print("Count the number of ccp4 electron density files in current directory.");
+print("Usage: cntccp4s");
+myPath = os.getcwd();
+ccp4Counter = len(glob.glob1(myPath,"*.pse"));
+print("Number of number of ccp4 electron density files in the current directory: ", ccp4Counter);
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Select atoms within a radius around a ligand.
+# group: pymolpy-Selection
+# key: selectAtomsAround
+# --
+cmd.do("select ${1:nearby}, resn ${2:drug} around ${3:5};")
+$0

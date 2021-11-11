@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Add or substract a atom number offset.
+# group: pymolpy-Programming
+# key: renumAtoms
+# --
+cmd.do("alter {$1:3fa0}, ID=ID+${2:100};")
+cmd.do("sort;")
+$0

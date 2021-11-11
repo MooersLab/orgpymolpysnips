@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Return settings in rounded format.
+# group: pymolpy-ChangeOrientation
+# key: rv
+# --
+cmd.do("run roundview.py;")
+$0

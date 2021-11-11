@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Code to start the RPC server with ipymol. Start pymol in terminal with pymol -R; select pymol.python as the kernel in juptyer. You may have to create this kernel for the Python interpreter that is inside PyMOL.
+# group: pymolpy-Jupyter
+# key: ipymolStart
+# --
+from ipymol import viewer as ipv;
+ipv.start() # Start PyMOL RPC server;
+$0

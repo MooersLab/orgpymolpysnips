@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print the atom name and number of a residue.
+# group: pymolpy-Programming
+# key: printAtomNumbers
+# --
+cmd.do("iterate (resi ${1:1}), print(name + \" %i${1:5}\" % ID);")
+$0

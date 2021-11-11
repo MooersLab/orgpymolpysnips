@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Fetch 2FoFc map as an isosurface. Edit the PDB-ID code. Use lowercase letter for the fifth character to select a single chain. Render and display a contour of this map as a chicken wire representation.
+# group: pymolpy-ElectronDensity
+# key: fetch2FoFcIsosurface
+# --
+cmd.do("fetch ${1:3nd4}, ${1:3nd4}_2fofc, type=2fofc, async=0;")
+cmd.do("isosurface 2fofcmap, ${1:3nd4}_2fofc, 1, ${1:3nd4}, carve = 1.8;")
+$0

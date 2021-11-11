@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Set path for location to save fetched pdb files.
+# group: pymolpy-Pymolrc
+# key: fetchPath
+# --
+cmd.do("set fetch_path, ${1:/Users/blaine/pdbFiles};")
+$0

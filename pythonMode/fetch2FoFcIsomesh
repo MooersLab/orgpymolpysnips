@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Fetch 2FoFc map as an isomesh.
+# group: pymolpy-ElectronDensity
+# key: fetch2FoFcIsomesh
+# --
+cmd.do("fetch ${1:3nd4}, ${1:3nd4}_2fofc, type=2fofc, async=0;")
+cmd.do("isomesh 2fofcmap, ${1:3nd4}_2fofc, 1, ${1:3nd4}, carve = 1.8;")
+$0

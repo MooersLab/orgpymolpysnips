@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Select residues by a range of numbers.
+# group: pymolpy-Selection
+# key: selectResi
+# --
+cmd.do("select ${!:se}; resi ${2: 1:100};")
+$0

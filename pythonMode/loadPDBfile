@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Load a pdb file in the current directory.
+# group: pymolpy-FileIO
+# key: loadPDBfile
+# --
+cmd.do("load ${1:my}.pdb;")
+$0

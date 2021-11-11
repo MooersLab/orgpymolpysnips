@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Color ribbon H red, strand yellow, loop green.
+# group: pymolpy-ColorScheme
+# key: cribbon
+# --
+cmd.do("as cartoon;")
+cmd.do("color red, ss H;")
+cmd.do("color yellow,ss S;")
+cmd.do("color green, ss L+;")
+$0

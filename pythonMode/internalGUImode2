@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Make the background of the internal gui transparent to expand viewport.
+# group: pymolpy-Workshop
+# key: internalGUImode2
+# --
+cmd.do("internal_gui_mode=2;")
+$0

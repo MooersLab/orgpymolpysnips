@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print name and b-factor for a residue or residue range (e.g. 81:120). The noH variant.
+# group: pymolpy-Print
+# key: printResiResnNameB4ResiXNoH
+# --
+Bfac_dict = { "Bfactors3" : [] };
+cmd.iterate("(${1:resi 133} and not elem H)","Bfactors3.append((resn,resi,name, b))", space=Bfac_dict); 
+[print("%s %s %s %.2f" % (i,j,k,l))for i,j,k,l in Bfac_dict["Bfactors3"]];
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Run the AOD function from the pymolshortcuts.py file to generate photorealistic effect with carbons colored black.
+# group: pymolpy-Jupyter
+# key: AOD
+# --
+cmd.do("AOD")
+$0

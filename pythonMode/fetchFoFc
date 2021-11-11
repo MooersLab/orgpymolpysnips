@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Fetch fofc map from the PDB.
+# group: pymolpy-FileIO
+# key: fetchFoFc
+# --
+cmd.do("fetch ${1:3nd4},  ${1:3nd4}_fofc, type=fofc, async=0;")
+$0

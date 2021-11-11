@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Add or substract a residue number offset.
+# group: pymolpy-Programming
+# key: renumResi
+# --
+cmd.do("alter ${1:3fa0}, resi=str(int(resi)+${2:100});sort;")
+$0

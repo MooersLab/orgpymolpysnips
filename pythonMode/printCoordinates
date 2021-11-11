@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Print the coordinates of the atoms in a residue.
+# group: pymolpy-Programming
+# key: printCoordinates
+# --
+stored.coords = [];
+iterate_state 1, (resi ${1:101}), stored.coords.append([x,y,z]);
+[print(i) for i in stored.coords];
+$0

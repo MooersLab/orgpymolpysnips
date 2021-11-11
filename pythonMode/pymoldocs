@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Return to the command history window the docstrings for all of the functions in a module.
+# group: pymolpy-Help
+# key: pymoldocs
+# --
+[help(i) for i in dir(pymol)];
+$0

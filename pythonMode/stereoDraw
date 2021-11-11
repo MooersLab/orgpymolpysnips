@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Stereo draw.
+# group: pymolpy-Stereo
+# key: stereoDraw
+# --
+cmd.do("stereo walleye; ")
+cmd.do("set ray_shadow, off; ")
+cmd.do("#draw 3200,2000;")
+cmd.do("draw ${1:1600,1000}; ")
+cmd.do("png ${2:aaa}.png;")
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Fetch the atomic coordinates as a cif file from the PDB.
+# group: pymolpy-FileIO
+# key: fetchCIF
+# --
+cmd.do("fetch ${1:3nd4}, type=cif, async=0;")
+$0

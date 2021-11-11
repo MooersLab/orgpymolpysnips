@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Remove waters from molecular object.
+# group: pymolpy-MolecularRepresentation
+# key: rmwater
+# --
+cmd.do("remove resn HOH;")
+$0
