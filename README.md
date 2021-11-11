@@ -25,14 +25,14 @@ This capability supports the practice of the FAIR principles and the practice of
 
 - Org documents can be used with the Emacs journal package an electronic laboratory notebook with each day being stored in a separate document. The source blocks of PyMOL code can be included.
 
-- Org supports a more direct and faster path to a PDF of the Org document. This PDF can be navigated much faster than the Org document with all of code unfolded and faster than a Jupyter notebook. This PDF for the document examined when selecting images for publication.
+- Org supports a more direct and faster path to a PDF of the Org document. This PDF can be navigated much faster than the Org document with all of code unfolded and faster than a Jupyter notebook. This PDF is the document of choice for selecting images for publication.
 
 ## Features of the library
 
 - Each snippet is in Python and is flanked by org-mode source block code.
 - Snippets are divided into 20 categories.
 - The categories appear as submenus in the yasnippet pull-down menu for org-mode.
-- The snippets are have tabtriggers
+- The snippets are have tab triggers (called key: in the snippet header) and tab stops (marked with $).
 
 
 ## Comparison with using Jupyter
