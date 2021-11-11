@@ -68,8 +68,10 @@ This capability supports the practice of the FAIR principles and the practice of
 ## Installation of the snippet library
 
 - Create the directory `~/.emacs.d/snippets/org-mode` for your personal snippets if this directory does not exist yet.
+- Create the directory `~/.emacs.d/snippets/python-mode` if this directory does not exist yet.
 - Download this repo.
 - Move the contents of `orgMode` to  `~/.emacs.d/snippets/org-mode`.
+- Move the contents of `pythonMode` to  `~/.emacs.d/snippets/python-mode`.
 
 ## Configuration of the Emacs intitialization file ( e.g., .emacs.el, .emacs, or ./emacs.d/init.el)
 
