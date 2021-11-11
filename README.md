@@ -23,7 +23,9 @@ This document would contain the code needed to generate the images used in the r
 Such a document enables readers to reproduce the images in the research paper. 
 This capability supports the practice of the FAIR principles and the practice of rigorous science.
 
-- Org documents can be used with the Emacs journal package an electronic laboratory notebook with each day being stored in a separate document. The source block of PyMOL code 
+- Org documents can be used with the Emacs journal package an electronic laboratory notebook with each day being stored in a separate document. The source blocks of PyMOL code can be included.
+
+- Org supports a more direct and faster path to a PDF of the Org document. This PDF can be navigated much faster than the Org document with all of code unfolded and faster than a Jupyter notebook. This PDF for the document examined when selecting images for publication.
 
 ## Features of the library
 
@@ -147,3 +149,24 @@ Fold as many of the code and result blocks to reduce the lag in scrolling the or
   
 <p align="center"><img src="images/pymol1out.png"></p>
   
+## Work arounds for lag in scrolling Org files are large numbers of images
+    
+- Fold all of the code blocks and results drawer. Open only the ones that you are currently inspecting.
+    
+- Do not return the images to a results drawer (change the top line of of the org-mode source block accordingly). Instead, import the image to a LaTeX figure environment and wait to see the image after compiling the PDF. Org can interpret LaTeX code directly. I made the following snippet file called latex-env-fig that shows up in the org-mode submenu under the latex-env subsubmenu of the YAsnippet pull-down menu. The `$` signs mark the sites of tab stops. This and several other members of the latex-env group are included in the `orgMode` folder.
+    
+```latex
+# -*- mode: snippet -*-
+# contributor: Blaine Mooers, bmooers1@gmail.com, github.com/MooersLab
+# name: Latex for figure env
+# group: latex-envs
+# key: fig
+# --
+\begin{figure}
+\begin{center}
+    \includegraphics[width={${1:0.86}\textwidth, angle=0]{${2:/Users/blaine/7JU5A.png}}
+\end{center}
+\caption{${3:RET kinase, PDB-ID: 7JU5}}
+\end{figure}
+$0
+```
