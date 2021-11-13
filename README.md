@@ -60,7 +60,6 @@ This capability supports the practice of the FAIR principles and the practice of
 - Emacs
 - yasnippets package for Emacs
 - org-mode package for Emacs
-- org-babel package for Emacs
 - Jupyter 
 - PyMOL
 - a jupyter kernel mapped to the Python interpreter of PyMOL.
