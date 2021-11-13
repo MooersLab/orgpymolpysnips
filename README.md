@@ -7,6 +7,10 @@ It includes a yasnippet library of PyMOL code library written in Python rather t
 Each snippet is a code source block for org-mode. 
 Org-mode is the scope of this library.
 You use the library with Jupyter kernels that can access the Python API of PyMOL.
+It is located in the orgMode folder.
+
+A second library in the pythonMode folder lacks the flanking source block lines for org-mode.
+This package is for use inside of the source block when Emacs recognizes the scope as being that of Python rather than Org.
 
 ## Why is this library for org-mode beneficial for biologists?
 
@@ -137,15 +141,22 @@ The following code turns off this security question for the listed languages.
 
 ## Example input source block  
   
-Change the kernel name to that for a Python interpreter that has access to the PyMOL API.
+If you use emacs-juptyer, you enter `#+BEGIN_SRC jupyter-python ` on the top lone of the source block.
+I found this approach to be fragile to changes in my PATH in my .zshrc file because I have numerous Python interpreters on my system. 
+    
+Alternatively, you can use org-babel. Start with  `#+BEGIN_SRC jupyter ` .
+    
+Change the kernel name to that for the Python interpreter that has access to PyMOL's Python API.
 The session name is arbitary. 
 Each session is independent.
+All blocks with the same session name are part of the same session, so they share the same state of Jupyter.
+Using different session names for different code blocks is useful testing alternate code blocks in isolation of each other.
 
 The height and width in the argument for Image() must be given but do not have to be the actual pixel values. 
 PyMOL only outputs PNG image files.  
   
 ```python
-#+BEGIN_SRC jupyter-python :session pymol3 :kernel cp38 :exports both :results raw drawer
+#+BEGIN_SRC jupyter :session pymol3 :kernel cp38 :exports both :results raw drawer
 cmd.do('fetch 7JU5:A, type=cif, async=0;')
 cmd.do('set_view (-0.11,0.47,-0.88,-0.56,0.7,0.44,0.82,0.54,0.19,0.0,0.0,-203.71,20.89,\
 6.7,-25.54,174.56,232.88,-20.0);')
@@ -167,19 +178,37 @@ cmd.do("set ray_shadow_decay_range, 2;")
 cmd.do("set depth_cue, 0;")
 cmd.do("ray;")
 cmd.do('png /Users/blaine/7JU5Aredo.png, 600, 600, dpi=300;')
+PATH = "/Users/blaine/"
+Image(filename = PATH + "7JU5Aredo.png", width=300, height=300, unconfined=True)
 #+END_SRC
 ```
 
-## Example result block  
-Fold as many of the code and result blocks to reduce the lag in scrolling the org document in Emacs.
+## Example result drawer when using `juptyer` from org-babel's `ob-jupyter`.
+  
+Click on the link to the file to open the png file in another buffer.    
+    
+```emacs    
+#+RESULTS:
+:RESULTS:
+#+attr_org: :width 300 :height 300
+[[file:./.ob-jupyter/a113aa80d474a45c062e5ef96056e481c078aa95.png]]
+:END:
+```     
+    
+## Example result drawer when using `juptyer-python` from emacs-jupyter.
   
 <p align="center"><img src="images/pymol1out.png"></p>
+    
+The display of the PNG output file directly in the org file causes the file to lag during scrolling.    
+Fold as many of the code and result blocks to reduce the lag during scrolling.
+    
   
-## Work arounds for lag in scrolling Org files are large numbers of images
+### Work arounds for lag in scrolling Org files are large numbers of images
     
 - Fold all of the code blocks and results drawer. Open only the ones that you are currently inspecting.
     
-- Do not return the images to a results drawer (change the top line of of the org-mode source block accordingly). Instead, import the image to a LaTeX figure environment and wait to see the image after compiling the PDF. Org can interpret LaTeX code directly. I made the following snippet file called latex-env-fig that shows up in the org-mode submenu under the latex-env subsubmenu of the YAsnippet pull-down menu. The `$` signs mark the sites of tab stops. This and several other members of the latex-env group are included in the `orgMode` folder.
+- Alternatively, do not return the images to a results drawer (change the top line of of the org-mode source block accordingly).
+Instead, import the image to a LaTeX figure environment and wait to see the image after compiling the PDF. Org can interpret LaTeX code directly. I made the following snippet file called latex-env-fig that shows up in the org-mode submenu under the latex-env subsubmenu of the YAsnippet pull-down menu. The `$` signs mark the sites of tab stops. This and several other members of the latex-env group are included in the `orgMode` folder.
     
 ```latex
 # -*- mode: snippet -*-
