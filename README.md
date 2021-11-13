@@ -9,11 +9,11 @@ Org-mode is the scope of this library.
 You use the library with Jupyter kernels that can access the Python API of PyMOL.
 It is located in the orgMode folder.
 
-A second library in the pythonMode folder lacks the flanking source block lines for org-mode. This package is for use inside of the source block when Emacs recognizes the scope as being that of Python rather than Org.
+A second library in the pythonMode folder lacks the flanking source block lines for org-mode. This package is for use inside of source blocks when Emacs recognizes the scope as being that of Python rather than Org.
 
 ## Why is this library for org-mode beneficial for biologists?
 
-- Org supports literate programming. The code can be run inside of a Org document and the output images can be displayed
+- Org supports literate programming. The code can be run inside of a Org document and the output images can be displayed in adjacent buffers or
 below the code block. The full power of Emacs's editing features are available for editing the flanking prose. 
 
 - A gallery of images can be generated. Such a gallery eases the selection of images for publication.
@@ -24,7 +24,7 @@ It is also useful for making images for review articles, book chapters, web site
 - The org document can be converted into a supplemental materials document for the research paper. 
 This document would contain the code needed to generate the images used in the research paper.
 Such a document enables readers to reproduce the images in the research paper. 
-This capability supports the practice of the FAIR principles and the practice of rigorous science.
+This capability supports the practice of the FAIR principles and adds rigor to the science being reported.
 
 - Org documents can be used with the Emacs journal package an electronic laboratory notebook with each day being stored in a separate document. The source blocks of PyMOL code can be included.
 
@@ -184,7 +184,7 @@ Image(filename = PATH + "7JU5Aredo.png", width=300, height=300, unconfined=True)
 #+END_SRC
 ```
 
-## Example result drawer when using `juptyer` from org-babel's `ob-jupyter`.
+## Example result drawer when using `jupyter` from org-babel's `ob-jupyter`.
   
 Click on the link to the file to open the png file in another buffer.    
     
@@ -196,7 +196,7 @@ Click on the link to the file to open the png file in another buffer.
 :END:
 ```     
     
-## Example result drawer when using `juptyer-python` from emacs-jupyter.
+## Example result drawer when using `jupyter-python` from emacs-jupyter.
   
 <p align="center"><img src="images/pymol1out.png"></p>
     
