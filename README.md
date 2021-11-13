@@ -145,9 +145,32 @@ Each session is independent.
 The height and width in the argument for Image() must be given but do not have to be the actual pixel values. 
 PyMOL only outputs PNG image files.  
   
-<p align="center"><img src="images/combined1.png"></p>
-  
-  
+```python
+#+BEGIN_SRC jupyter-python :session pymol3 :kernel cp38 :exports both :results raw drawer
+cmd.do('fetch 7JU5:A, type=cif, async=0;')
+cmd.do('set_view (-0.11,0.47,-0.88,-0.56,0.7,0.44,0.82,0.54,0.19,0.0,0.0,-203.71,20.89,\
+6.7,-25.54,174.56,232.88,-20.0);')
+cmd.do("set_color oxygen, [1.0,0.4,0.4];")
+cmd.do("set_color nitrogen, [0.5,0.5,1.0];")
+cmd.do("remove solvent;")
+cmd.do("as spheres;")
+cmd.do("util.cbaw;")
+cmd.do("bg white;")
+cmd.do("set light_count,10;")
+cmd.do("set spec_count,1;")
+cmd.do("set shininess, 10;")
+cmd.do("set specular,0.25;")
+cmd.do("set ambient,0;")
+cmd.do("set direct,0;")
+cmd.do("set reflect,1.5;")
+cmd.do("set ray_shadow_decay_factor, 0.1;")
+cmd.do("set ray_shadow_decay_range, 2;")
+cmd.do("set depth_cue, 0;")
+cmd.do("ray;")
+cmd.do('png /Users/blaine/7JU5Aredo.png, 600, 600, dpi=300;')
+#+END_SRC
+```
+
 ## Example result block  
 Fold as many of the code and result blocks to reduce the lag in scrolling the org document in Emacs.
   
