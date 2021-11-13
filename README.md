@@ -9,8 +9,7 @@ Org-mode is the scope of this library.
 You use the library with Jupyter kernels that can access the Python API of PyMOL.
 It is located in the orgMode folder.
 
-A second library in the pythonMode folder lacks the flanking source block lines for org-mode.
-This package is for use inside of the source block when Emacs recognizes the scope as being that of Python rather than Org.
+A second library in the pythonMode folder lacks the flanking source block lines for org-mode. This package is for use inside of the source block when Emacs recognizes the scope as being that of Python rather than Org.
 
 ## Why is this library for org-mode beneficial for biologists?
 
@@ -199,16 +198,15 @@ Click on the link to the file to open the png file in another buffer.
   
 <p align="center"><img src="images/pymol1out.png"></p>
     
-The display of the PNG output file directly in the org file causes the file to lag during scrolling.    
-Fold as many of the code and result blocks to reduce the lag during scrolling.
+The display of the PNG output file directly in the org file causes the file to lag during scrolling. Fold as many of the code and result blocks as possible to reduce the lag during scrolling.
     
   
 ### Work arounds for lag in scrolling Org files are large numbers of images
     
-- Fold all of the code blocks and results drawer. Open only the ones that you are currently inspecting.
+- Fold all of the code blocks and results drawers. Open only the ones that you are currently inspecting.
     
-- Alternatively, do not return the images to a results drawer (change the top line of of the org-mode source block accordingly).
-Instead, import the image to a LaTeX figure environment and wait to see the image after compiling the PDF. Org can interpret LaTeX code directly. I made the following snippet file called latex-env-fig that shows up in the org-mode submenu under the latex-env subsubmenu of the YAsnippet pull-down menu. The `$` signs mark the sites of tab stops. This and several other members of the latex-env group are included in the `orgMode` folder.
+- Alternatively, do not return the images to a results drawer (change the top line of the org-mode source block accordingly).
+Instead, import the image to a LaTeX figure environment and wait to see the image after compiling the PDF. Org can interpret LaTeX code directly. I made the following snippet file called latex-env-fig that shows up in the org-mode sub-menu under the latex-env sub-sub-menu of the YAsnippet pull-down menu. The `$` signs mark the sites of tab stops. This and several other members of the latex-env group are included in the `orgMode` folder.
     
 ```latex
 # -*- mode: snippet -*-
