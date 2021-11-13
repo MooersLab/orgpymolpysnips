@@ -130,13 +130,15 @@ The following code turns off this security question for the listed languages.
 
 <p align="center"><img src="images/org-yas.png"></p>
 
+- To keep your sanity, activate to the base conda environment.
+- Start Emacs.
 - Open a org document in Emacs.
 - Select under the `YASnippet` pulldown `Reload everything` to load the snippets in an old session of PyMOL.
 - Select under the `YASnippet` pulldown `org-mode` and then one of the sub-menus with the prefix `pymolpy-`. Select a snippet to insert it into the org document, or enter the key (== tabtrigger) name in the org document and enter tab to insert the code.
 - Enter <tab> to advance through the tab stops. Edit each tab stop as needed. For example, you may need to change the name of the kernel or the color of a chain.
-- Place the cursor inside the code block or on the first line of the source block and enter `C-c C-c` to execute the code. The output will appear below.
-- You may have to merge code blocks from multiple snippets for complex analyses. The merger has to be done by manual copy and paste.
-- You can also access the pymolshortcuts. The file containing the shortcuts can be loaded by running the command `cmd.do("run /Users/blaine/Scripts/PyMOLScripts/pymolshortcuts.py")`. For example, the ambient occlussion shortcut is applied by entering `cmd.do(AO)`.
+- Place the cursor inside the code block or on the first line of the source block and enter `C-c C-c` to execute the code. The output will appear in the results drawer below.
+- You may have to merge code blocks from multiple snippets for complex analyses. The merger has to be done by manual copy and paste. You can also use snippet from the pythonMode library inside of the code blocks.
+- You can also access the [pymolshortcuts](https://github.com/MooersLab/pymolshortcuts/edit/master/README.md). The file containing the shortcuts can be loaded by running the command `cmd.do("run /Users/blaine/Scripts/PyMOLScripts/pymolshortcuts.py")`. For example, the ambient occlussion shortcut is applied by adding the line `cmd.do(AO)` to your source block. This saves spaces because the AO shortcut has 16 lines of code.
 
 ## Example input source block  
   
