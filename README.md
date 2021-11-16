@@ -130,14 +130,14 @@ The following code turns off this security question for the listed languages.
 
 <p align="center"><img src="images/org-yas.png"></p>
 
-- To keep your sanity, activate to the base conda environment.
+- Creat the required Jupyter kernel. Either map one to the PyMOL.app Python interpreter or install PyMOL in a conda env and create a juptyer kernel for that env.
 - Start Emacs.
 - Open a org document in Emacs.
 - Select under the `YASnippet` pulldown `Reload everything` to load the snippets in an old session of PyMOL.
 - Select under the `YASnippet` pulldown `org-mode` and then one of the sub-menus with the prefix `pymolpy-`. Select a snippet to insert it into the org document, or enter the key (== tabtrigger) name in the org document and enter tab to insert the code.
 - Enter <tab> to advance through the tab stops. Edit each tab stop as needed. For example, you may need to change the name of the kernel or the color of a chain.
 - Place the cursor inside the code block or on the first line of the source block and enter `C-c C-c` to execute the code. The output will appear in the results drawer below.
-- You may have to merge code blocks from multiple snippets for complex analyses. The merger has to be done by manual copy and paste. You can also use snippet from the pythonMode library inside of the code blocks.
+- You may have to merge code blocks from multiple snippets for complex analyses. The merger has to be done by manual copy and paste. You can alternately use snippets from the pythonMode library inside of the code blocks when Emacs recognizes the interior of the code block as being in the python-mode.
 - You can also access the [pymolshortcuts](https://github.com/MooersLab/pymolshortcuts/edit/master/README.md). The file containing the shortcuts can be loaded by running the command `cmd.do("run /Users/blaine/Scripts/PyMOLScripts/pymolshortcuts.py")`. For example, the ambient occlussion shortcut is applied by adding the line `cmd.do(AO)` to your source block. This saves spaces because the AO shortcut has 16 lines of code.
 
 ## Example input source block  
@@ -145,7 +145,7 @@ The following code turns off this security question for the listed languages.
 If you use emacs-juptyer, you enter `#+BEGIN_SRC jupyter-python ` on the top lone of the source block.
 I found this approach to be fragile to changes in my PATH in my .zshrc file because I have numerous Python interpreters on my system. 
     
-Alternatively, you can use org-babel. Start with  `#+BEGIN_SRC jupyter ` .
+Alternatively, you can use org-babel. You will have to specifiy a session and a kernel. Start with  `#+BEGIN_SRC jupyter :session pymol :kernel cp38` .
     
 Change the kernel name to that for the Python interpreter that has access to PyMOL's Python API.
 The session name is arbitary. 
