@@ -225,3 +225,7 @@ Instead, import the image to a LaTeX figure environment and wait to see the imag
 \end{figure}
 $0
 ```
+
+## Library at emacsconf21
+    
+An eight-minute [video](https://emacsconf.org/2021/talks/molecular/) about the library will be available here after November 27, 2021. The video will be played at 3:04 PM (EST) on November 27th and will be followed by a Q & A session.
