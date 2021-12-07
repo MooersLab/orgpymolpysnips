@@ -2,6 +2,7 @@
 
 ## Introduction
 
+
 This project supports the generation of reproducible molecular images using Org Mode and PyMOL.
 It includes a yasnippet library of PyMOL code library written in Python rather than the PyMOL macro language (pml) library.
 Each snippet is a code source block for org-mode. 
@@ -9,7 +10,17 @@ Org-mode is the scope of this library.
 You use the library with Jupyter kernels that can access the Python API of PyMOL.
 It is located in the orgMode folder.
 
-A second library in the pythonMode folder lacks the flanking source block lines for org-mode. This package is for use inside of source blocks when Emacs recognizes the scope as being that of Python rather than Org.
+A second library in the pythonMode folder lacks the flanking source block lines for org-mode. 
+This package is for use inside of source blocks when Emacs recognizes the scope as being that of Python rather than Org.
+
+### Library at emacsconf21
+    
+An eight-minute [video](https://emacsconf.org/2021/talks/molecular/) presented at emacconf21 on November 27th provides a quick overview.
+The talk has subtitles.
+There is a Q & A section and a transcript of the talk on this webpage.
+This talk was given in the first day's afternoon session on org-mode. 
+Be sure to check out the 44 other [talks](https://emacsconf.org/2021/schedule/). 
+
 
 ## Why is this library for org-mode beneficial for biologists?
 
@@ -226,6 +237,3 @@ Instead, import the image to a LaTeX figure environment and wait to see the imag
 $0
 ```
 
-## Library at emacsconf21
-    
-An eight-minute [video](https://emacsconf.org/2021/talks/molecular/) about the library will be available here after November 27, 2021. The video will be played at 3:04 PM (EST) on November 27th and will be followed by a Q & A session.
