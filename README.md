@@ -6,15 +6,9 @@
 ## Introduction
 
 
-This project supports the generation of reproducible molecular images using Org Mode and PyMOL.
-It includes a yasnippet library of PyMOL code library written in Python rather than the PyMOL macro language (pml) library.
-Each snippet is a code source block for org-mode. 
-Org-mode is the scope of this library.
-You use the library with Jupyter kernels that can access the Python API of PyMOL.
-It is located in the orgMode folder.
+This project supports the generation of reproducible molecular images using Org Mode and PyMOL. It includes a yasnippet library of PyMOL code library written in Python rather than the PyMOL macro language (pml) library. Each snippet is a code source block for org-mode. Org-mode is the scope of this library. You use the library with Jupyter kernels that can access the Python API of PyMOL. This library resides in the orgMode folder.
 
-A second library in the pythonMode folder lacks the flanking source block lines for org-mode. 
-This package is for use inside of source blocks when Emacs recognizes the scope as being that of Python rather than Org.
+A second library in the pythonMode folder lacks the flanking source block lines for org-mode. This package is for use inside of source blocks when Emacs recognizes the scope as Python rather than Org.
 
 ### Library at emacsconf21
     
