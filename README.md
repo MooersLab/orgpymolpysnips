@@ -234,3 +234,16 @@ Instead, import the image to a LaTeX figure environment and wait to see the imag
 $0
 ```
 
+## Related Repos
+
+- [easypymol](https://github.com/MooersLab/EasyPyMOL/edit/master/README.md)
+- [pymolshortcuts](https://github.com/MooersLab/pymolshortcuts)
+- [pymolsnips](https://github.com/MooersLab/pymolsnips)
+- [orgpymolpysnips](https://github.com/MooersLab/orgpymolpysnips)
+- [rstudiopymolpysnips](https://github.com/MooersLab/rstudiopymolpysnips)
+- [taggedpymolpysnips](https://github.com/MooersLab/taggedpymolpysnips)
+- [jupyterlabpymolpysnips](https://github.com/MooersLab/jupyterlabpymolpysnips)
+- [colabOpenSourcePyMOLpySnips](https://github.com/MooersLab/colabOpenSourcePyMOLpySnips)
+- [colabPyMOLpySnips](https://github.com/MooersLab/colabPyMOLpySnips)
+- [PyMOLwallhangings](https://github.com/MooersLab/PyMOLwallhangings)
+
