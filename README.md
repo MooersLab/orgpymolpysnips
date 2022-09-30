@@ -73,7 +73,8 @@ This capability supports the practice of the FAIR principles and adds rigor to t
 - org-mode package for Emacs
 - Jupyter 
 - PyMOL
-- a jupyter kernel mapped to the Python interpreter of PyMOL.
+- a jupyter kernel mapped to the Python interpreter of PyMOL
+- installation of ipykernel inside the pymol env
 
 ## Installation of the snippet library
 
@@ -166,6 +167,8 @@ PyMOL only outputs PNG image files.
   
 ```python
 #+BEGIN_SRC jupyter :session pymol3 :kernel cp38 :exports both :results raw drawer
+from pymol import cmd
+from IPython.display import Image
 cmd.do('fetch 7JU5:A, type=cif, async=0;')
 cmd.do('set_view (-0.11,0.47,-0.88,-0.56,0.7,0.44,0.82,0.54,0.19,0.0,0.0,-203.71,20.89,\
 6.7,-25.54,174.56,232.88,-20.0);')
