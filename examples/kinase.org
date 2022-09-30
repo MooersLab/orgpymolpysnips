@@ -28,4 +28,6 @@ cmd.do("set ray_shadow_decay_range, 2;")
 cmd.do("set depth_cue, 0;")
 cmd.do("ray;")
 cmd.do('png /Users/blaine/7JU5Aredo.png, 600, 600, dpi=300;')
+PATH = "/Users/blaine/"
+Image(filename = PATH + "7JU5Aredo.png", width=300, height=300, uncoNfined=True)
 #+END_SRC
