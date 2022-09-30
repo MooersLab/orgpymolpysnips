@@ -5,10 +5,15 @@
 
 ## Introduction
 
+This project supports the generation of reproducible molecular images using Org Mode and PyMOL. 
+It includes a yasnippet library of PyMOL code library written in Python rather than the PyMOL macro language (pml) library. 
+Each snippet is a code source block for org-mode. 
+Org-mode is the scope of this library. 
+You use the library with Jupyter kernels that can access the Python API of PyMOL. 
+This library resides in the orgMode folder.
 
-This project supports the generation of reproducible molecular images using Org Mode and PyMOL. It includes a yasnippet library of PyMOL code library written in Python rather than the PyMOL macro language (pml) library. Each snippet is a code source block for org-mode. Org-mode is the scope of this library. You use the library with Jupyter kernels that can access the Python API of PyMOL. This library resides in the orgMode folder.
-
-A second library in the pythonMode folder lacks the flanking source block lines for org-mode. This package is for use inside of source blocks when Emacs recognizes the scope as Python rather than Org.
+A second library in the pythonMode folder lacks the flanking source block lines for org-mode. 
+This package is for use inside of source blocks when Emacs recognizes the scope as Python rather than Org.
 
 ### Library at emacsconf21
     
@@ -45,10 +50,8 @@ This capability supports the practice of the FAIR principles and adds rigor to t
 - The categories appear as submenus in the yasnippet pull-down menu for org-mode.
 - The snippets are have tab triggers (called key: in the snippet header) and tab stops (marked with $).
 
-
 ## Comparison with using Jupyter
 <div align="center">
-
 
 | Features          | Org Mode | Jupyter  |
 |:-------------------|:----------:|:----------:|
@@ -74,7 +77,10 @@ This capability supports the practice of the FAIR principles and adds rigor to t
 - Jupyter 
 - PyMOL
 - a jupyter kernel mapped to the Python interpreter of PyMOL
-- installation of ipykernel inside the pymol env
+- installation of ipykernel inside the pymol conda environment
+
+Note that you can install ipykernel inside of the PyMOL.app via the command `conda install ipykernel` entered on the commandline just below the command history window.
+The prompt will hang for several minutes because number of packages have to be installed.
 
 ## Installation of the snippet library
 
@@ -151,10 +157,12 @@ The following code turns off this security question for the listed languages.
 
 ## Example input source block  
   
-If you use emacs-juptyer, you enter `#+BEGIN_SRC jupyter-python ` on the top lone of the source block.
+If you use emacs-juptyer, you enter `#+BEGIN_SRC jupyter-python ` on the top line of the source block.
 I found this approach to be fragile to changes in my PATH in my .zshrc file because I have numerous Python interpreters on my system. 
     
-Alternatively, you can use org-babel. You will have to specifiy a session and a kernel. Start with  `#+BEGIN_SRC jupyter :session pymol :kernel cp38` .
+Alternatively, you can use org-babel. 
+You will have to specifiy a session and a kernel. 
+Start with  `#+BEGIN_SRC jupyter :session pymol :kernel cp38` .
     
 Change the kernel name to that for the Python interpreter that has access to PyMOL's Python API.
 The session name is arbitary. 
